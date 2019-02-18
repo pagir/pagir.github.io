@@ -430,7 +430,7 @@ img.pull-left {
 }
 
 .img-etudiant {
-  width: 400px;
+  width: 300px;
   position: relative;
   margin: -10% auto;
   line-height: 1.4em;
@@ -1266,7 +1266,7 @@ input::-moz-focus-inner {
     font-size: 3.4rem;
   }
   .img-etudiant {
-    width: 400px;
+    width: 300px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1274,7 +1274,7 @@ input::-moz-focus-inner {
     font-size: 3rem;
   }
   .img-etudiant {
-    width:350px;
+    width: 275px;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -1282,7 +1282,7 @@ input::-moz-focus-inner {
     font-size: 3rem;
   }
   .img-etudiant {
-    width: 300px;
+    width: 250px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -1291,7 +1291,7 @@ input::-moz-focus-inner {
     margin-bottom: 4.2rem;
   }
   .img-etudiant {
-    width: 250px;
+    width: 225px;
   }
 
   .subhead {
@@ -1300,38 +1300,50 @@ input::-moz-focus-inner {
 }
 @media only screen and (max-width: 700px) {
   .display-1 {
-    font-size: 4rem;
-  }
-  .img-etudiant {
-    width: 225px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .display-1 {
-    font-size: 3.6rem;
+    font-size: 3rem;
   }
   .img-etudiant {
     width: 200px;
   }
+  .col-full {
+    width: 80% !important;
+  }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .display-1 {
-    font-size: 3.3rem;
+    font-size: 2.8rem;
   }
   .img-etudiant {
     width: 175px;
+  }
+  .col-full {
+    width: 80% !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .display-1 {
+    font-size: 2.5rem;
+  }
+  .img-etudiant {
+    width: 150px;
   }
 
   .subhead {
     font-size: 1.4rem;
   }
+  .col-full {
+    width: 80% !important;
+  }
 }
 @media only screen and (max-width: 400px) {
   .display-1 {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
   .img-etudiant {
-    width: 150px;
+    width: 125px;
+  }
+  .col-full {
+    width: 80% !important;
   }
 }
 
@@ -1748,9 +1760,9 @@ input::-moz-focus-inner {
   background-size: 100% auto;
   background-attachment: fixed;
   -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .home-content h1 {
   font-family: "domine-bold", sans-serif;
@@ -2448,7 +2460,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 1200px) {
   .s-services {
     padding-top: 15rem;
-    padding-bottom: 15rem;
+    padding-bottom: 20rem;
   }
 
   .services-list [class*="col-"]:nth-child(2n + 1) {
