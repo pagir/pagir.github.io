@@ -2460,7 +2460,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 1200px) {
   .s-services {
     padding-top: 15rem;
-    padding-bottom: 20rem;
+    padding-bottom: 15rem;
   }
 
   .services-list [class*="col-"]:nth-child(2n + 1) {
@@ -2473,7 +2473,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 800px) {
   .s-services {
     padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-bottom: 15rem;
   }
 
   .services-list {
