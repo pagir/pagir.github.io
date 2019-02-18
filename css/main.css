@@ -1747,6 +1747,10 @@ input::-moz-focus-inner {
   background-image: url("../images/hero-bg.jpg");
   background-size: 100% auto;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 .home-content h1 {
   font-family: "domine-bold", sans-serif;
