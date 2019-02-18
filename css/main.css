@@ -1712,6 +1712,9 @@ input::-moz-focus-inner {
   padding-bottom: 15.6rem;
   overflow: hidden;
   position: relative;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
 }
 .home-content h1 {
   font-family: "domine-bold", sans-serif;
@@ -2380,6 +2383,11 @@ html.no-csstransitions .home-content__main {
   padding-bottom: 18rem;
   color: #555555;
   position: relative;
+}
+.s-services-long {
+  background-image: url("../images/long-fastidieux.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
 }
 
 
