@@ -1265,21 +1265,33 @@ input::-moz-focus-inner {
   .display-1 {
     font-size: 3.4rem;
   }
+  .img-etudiant {
+    width: 400px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .display-1 {
     font-size: 3rem;
+  }
+  .img-etudiant {
+    width:350px;
   }
 }
 @media only screen and (max-width: 950px) {
   .display-1 {
     font-size: 3rem;
   }
+  .img-etudiant {
+    width: 300px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .display-1 {
     font-size: 3rem;
     margin-bottom: 4.2rem;
+  }
+  .img-etudiant {
+    width: 250px;
   }
 
   .subhead {
@@ -1290,15 +1302,24 @@ input::-moz-focus-inner {
   .display-1 {
     font-size: 4rem;
   }
+  .img-etudiant {
+    width: 225px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .display-1 {
     font-size: 3.6rem;
   }
+  .img-etudiant {
+    width: 200px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .display-1 {
     font-size: 3.3rem;
+  }
+  .img-etudiant {
+    width: 175px;
   }
 
   .subhead {
@@ -1308,6 +1329,9 @@ input::-moz-focus-inner {
 @media only screen and (max-width: 400px) {
   .display-1 {
     font-size: 3rem;
+  }
+  .img-etudiant {
+    width: 150px;
   }
 }
 
