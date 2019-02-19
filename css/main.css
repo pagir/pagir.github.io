@@ -1225,19 +1225,19 @@ input::-moz-focus-inner {
  .text-section {
    width: 50%;
    position: relative;
-   left: 13rem;
+   left: 11rem;
  }
  .invert-text-section {
    width: 50%;
    position: relative;
-   left: 63rem;
+   left: 61rem;
  }
 
  .img-etudiant {
   width: 396px;
   position: absolute;
   top: -28rem;
-  right: -46rem;
+  right: -47.5rem;
 }
 
 .recruter {
@@ -1258,7 +1258,7 @@ input::-moz-focus-inner {
   width: 396px;
   position: absolute;
   top: -13rem;
-  right: -46rem;
+  right: -47.5rem;
 }
 
 .display-1 {
@@ -1369,20 +1369,21 @@ input::-moz-focus-inner {
   .text-section {
     width: 55%;
     position: relative;
+    left: 4rem;
   }
   .invert-text-section {
-    left: 36rem;
+    left: 40rem;
     width: 55%;
   }
   .img-etudiant {
     width: 322px;
     top: -22rem;
-    right: -35rem;
+    right: -34rem;
   }
   .patients {
     width: 322px;
     top: -12rem;
-    right: -35rem;
+    right: -34rem;
   }
   .recruter {
     width: 322px;
