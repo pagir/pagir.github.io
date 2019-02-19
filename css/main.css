@@ -1224,18 +1224,20 @@ input::-moz-focus-inner {
 
  .text-section {
    width: 50%;
+   position: relative;
+   left: 13rem;
  }
  .invert-text-section {
    width: 50%;
    position: relative;
-   left: 70rem;
+   left: 63rem;
  }
 
  .img-etudiant {
   width: 396px;
   position: absolute;
   top: -28rem;
-  right: -57rem;
+  right: -46rem;
 }
 
 .recruter {
@@ -1245,11 +1247,18 @@ input::-moz-focus-inner {
   left: -48rem;
 }
 
+.vacances {
+  width: 396px;
+  position: absolute;
+  top: -24rem;
+  left: -48rem;
+}
+
 .patients {
   width: 396px;
   position: absolute;
   top: -13rem;
-  right: -57rem;
+  right: -46rem;
 }
 
 .display-1 {
@@ -1291,6 +1300,8 @@ input::-moz-focus-inner {
   }
   .text-section {
     width: 50%;
+    position: relative;
+    left: 11rem;
   }
   .invert-text-section {
     left: 60rem;
@@ -1299,17 +1310,22 @@ input::-moz-focus-inner {
   .img-etudiant {
     width: 424px;
     top: -32rem;
-    right: -51rem;
+    right: -46rem;
   }
   .patients {
     width: 424px;
     top: -17rem;
-    right: -51rem;
+    right: -46rem;
   }
   .recruter {
     width: 424px;
     top: -18rem;
-    left: -53rem;
+    left: -47rem;
+  }
+  .vacances {
+    width: 424px;
+    top: -26rem;
+    left: -47rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1318,25 +1334,32 @@ input::-moz-focus-inner {
   }
   .text-section {
     width: 50%;
+    position: relative;
+    left: 10rem;
   }
   .invert-text-section {
-    left: 49rem;
+    left: 53rem;
     width: 50%;
   }
   .img-etudiant {
     width: 375px;
     top: -28rem;
-    right: -46rem;
+    right: -39rem;
   }
   .patients {
     width: 375px;
     top: -13rem;
-    right: -46rem;
+    right: -39rem;
   }
   .recruter {
     width: 375px;
     top: -13rem;
-    left: -46rem;
+    left: -41rem;
+  }
+  .vacances {
+    width: 375px;
+    top: -26rem;
+    left: -41rem;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -1345,6 +1368,7 @@ input::-moz-focus-inner {
   }
   .text-section {
     width: 55%;
+    position: relative;
   }
   .invert-text-section {
     left: 36rem;
@@ -1365,6 +1389,11 @@ input::-moz-focus-inner {
     top: -14rem;
     left: -35rem;
   }
+  .vacances {
+    width: 322px;
+    top: -21rem;
+    left: -35rem;
+  }
 }
 @media only screen and (max-width: 800px) {
   .display-1 {
@@ -1373,6 +1402,7 @@ input::-moz-focus-inner {
   }
   .text-section {
     width: 60%;
+    position: relative;
   }
   .invert-text-section {
     left: 29rem;
@@ -1393,6 +1423,11 @@ input::-moz-focus-inner {
     top: -11rem;
     left: -28rem;
   }
+  .vacances {
+    width: 264px;
+    top: -18rem;
+    left: -28rem;
+  }
 
   .subhead {
     font-size: 1.5rem;
@@ -1404,6 +1439,7 @@ input::-moz-focus-inner {
   }
   .text-section {
     width: 70%;
+    position: relative;
   }
   .invert-text-section {
     left: 18rem;
@@ -1413,16 +1449,25 @@ input::-moz-focus-inner {
     width: 206px;
     top: -15rem;
     right: -21rem;
+    /* display: none; */
   }
   .patients {
     width: 206px;
     top: -5rem;
     right: -21rem;
+    /* display: none; */
   }
   .recruter {
     width: 206px;
     top: -4rem;
     left: -20rem;
+    /* display: none; */
+  }
+  .vacances {
+    width: 206px;
+    top: -15rem;
+    left: -20rem;
+    /* display: none; */
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1431,6 +1476,7 @@ input::-moz-focus-inner {
   }
   .text-section {
     width: 100%;
+    position: relative;
   }
   .invert-text-section {
     left: 0rem;
@@ -1448,6 +1494,10 @@ input::-moz-focus-inner {
     width: 100px;
     display: none;
   }
+  .vacances {
+    width: 100px;
+    display: none;
+  }
 }
 @media only screen and (max-width: 500px) {
   .display-1 {
@@ -1455,6 +1505,7 @@ input::-moz-focus-inner {
   }
   .text-section {
     width: 100%;
+    position: relative;
   }
   .invert-text-section {
     left: 0rem;
@@ -1475,6 +1526,10 @@ input::-moz-focus-inner {
     width: 100px;
     display: none;
   }
+  .vacances {
+    width: 100px;
+    display: none;
+  }
 }
 @media only screen and (max-width: 400px) {
   .display-1 {
@@ -1482,6 +1537,7 @@ input::-moz-focus-inner {
   }
   .text-section {
     width: 100%;
+    position: relative;
   }
   .invert-text-section {
     left: 0rem;
@@ -1496,6 +1552,10 @@ input::-moz-focus-inner {
     display: none;
   }
   .recruter {
+    width: 100px;
+    display: none;
+  }
+  .vacances {
     width: 100px;
     display: none;
   }
@@ -1545,7 +1605,7 @@ input::-moz-focus-inner {
 }
 .header-logo img {
   width: 500px;
-  height: 76px;
+  height: 205px;
 }
 
 
@@ -1831,7 +1891,7 @@ input::-moz-focus-inner {
   }
   .header-logo img {
     width: 180px;
-    height: 34px;
+    height: 101px;
   }
 
   .header-menu-toggle {
