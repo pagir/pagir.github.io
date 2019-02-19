@@ -67,6 +67,7 @@ html {
 
 html, body {
   height: 100%;
+  background-color: pink;
 }
 
 body {
@@ -1335,10 +1336,10 @@ input::-moz-focus-inner {
   .text-section {
     width: 50%;
     position: relative;
-    left: 10rem;
+    left: 3rem;
   }
   .invert-text-section {
-    left: 53rem;
+    left: 45rem;
     width: 50%;
   }
   .img-etudiant {
@@ -1369,10 +1370,10 @@ input::-moz-focus-inner {
   .text-section {
     width: 55%;
     position: relative;
-    left: 4rem;
+    left: 1rem;
   }
   .invert-text-section {
-    left: 40rem;
+    left: 37.5rem;
     width: 55%;
   }
   .img-etudiant {
@@ -1404,20 +1405,21 @@ input::-moz-focus-inner {
   .text-section {
     width: 60%;
     position: relative;
+    left: 1.5rem;
   }
   .invert-text-section {
-    left: 29rem;
+    left: 28.5rem;
     width: 60%;
   }
   .img-etudiant {
     width: 264px;
     top: -20rem;
-    right: -28rem;
+    right: -27.5rem;
   }
   .patients {
     width: 264px;
     top: -10rem;
-    right: -28rem;
+    right: -27.5rem;
   }
   .recruter {
     width: 264px;
@@ -1443,32 +1445,33 @@ input::-moz-focus-inner {
     position: relative;
   }
   .invert-text-section {
-    left: 18rem;
+    /* left: 18rem; */
+    left: 0rem;
     width: 70%;
   }
   .img-etudiant {
     width: 206px;
     top: -15rem;
     right: -21rem;
-    /* display: none; */
+    display: none;
   }
   .patients {
     width: 206px;
     top: -5rem;
     right: -21rem;
-    /* display: none; */
+    display: none;
   }
   .recruter {
     width: 206px;
     top: -4rem;
     left: -20rem;
-    /* display: none; */
+    display: none;
   }
   .vacances {
     width: 206px;
     top: -15rem;
     left: -20rem;
-    /* display: none; */
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1476,7 +1479,7 @@ input::-moz-focus-inner {
     font-size: 2.3rem;
   }
   .text-section {
-    width: 100%;
+    width: 97%;
     position: relative;
   }
   .invert-text-section {
@@ -1537,7 +1540,7 @@ input::-moz-focus-inner {
     font-size: 1.7rem;
   }
   .text-section {
-    width: 100%;
+    width: 96%;
     position: relative;
   }
   .invert-text-section {
