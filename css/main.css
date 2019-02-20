@@ -1308,6 +1308,9 @@ input::-moz-focus-inner {
 .subhead::before {
   content: "/ ";
 }
+.interested {
+  text-align: center;
+}
 
 /* -------------------------------------------------------------------
  * responsive:
@@ -1894,6 +1897,12 @@ input::-moz-focus-inner {
   .header-menu-toggle {
     right: 60px;
   }
+  .home-button-1 {
+    right: 200px !important;
+  }
+  .home-button-2 {
+    right: 326px !important;
+  }
 }
 @media only screen and (max-width: 800px) {
   .header-logo {
@@ -1927,6 +1936,12 @@ input::-moz-focus-inner {
   .header-menu-toggle::before {
     display: none;
   }
+  .home-button-1 {
+    right: 100px !important;
+  }
+  .home-button-2 {
+    right: 240px !important;
+  }
 }
 @media only screen and (max-width: 400px) {
   .s-header {
@@ -1944,6 +1959,14 @@ input::-moz-focus-inner {
   .header-menu-toggle {
     top: 24px;
     right: 20px;
+  }
+  .home-button-1 {
+    right: 70px !important;
+    top: 28px;
+  }
+  .home-button-2 {
+    right: 205px !important;
+    top: 28px;
   }
 }
 
