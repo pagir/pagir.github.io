@@ -6,10 +6,10 @@
 (function($) {
 
     "use strict";
-    
+
     var cfg = {
         scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+        mailChimpURL   : 'https://us19.admin.mailchimp.com/lists/members/?id=126067'   // mailchimp url
     },
 
     $WIN = $(window);
@@ -23,7 +23,7 @@
    /* Preloader
     * -------------------------------------------------- */
     var clPreloader = function() {
-        
+
         $("html").addClass('cl-preload');
 
         $WIN.on('load', function() {
@@ -31,16 +31,16 @@
             //force page scroll position to top at page refresh
             // $('html, body').animate({ scrollTop: 0 }, 'normal');
 
-            // will first fade out the loading animation 
+            // will first fade out the loading animation
             $("#loader").fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
                 $("#preloader").delay(300).fadeOut("slow");
-            }); 
-            
-            // for hero content animations 
+            });
+
+            // for hero content animations
             $("html").removeClass('cl-preload');
             $("html").addClass('cl-loaded');
-        
+
         });
     };
 
@@ -48,7 +48,7 @@
    /* Menu on Scrolldown
     * ------------------------------------------------------ */
     var clMenuOnScrolldown = function() {
-        
+
         var menuTrigger = $('.header-menu-toggle');
 
         $WIN.on('scroll', function() {
@@ -116,7 +116,7 @@
                 $size = $thumbLink.data('size').split('x'),
                 $width  = $size[0],
                 $height = $size[1];
-        
+
             var item = {
                 src  : $href,
                 w    : $width,
@@ -152,7 +152,7 @@
    /* Stat Counter
     * ------------------------------------------------------ */
     var clStatCount = function() {
-        
+
         var statSection = $(".s-stats"),
             stats = $(".stats__count");
 
@@ -174,7 +174,7 @@
                         });
                     });
 
-                } 
+                }
 
                 // trigger once only
                 this.destroy();
@@ -188,9 +188,9 @@
 
 
    /* Masonry
-    * ---------------------------------------------------- */ 
+    * ---------------------------------------------------- */
     var clMasonryFolio = function () {
-        
+
         var containerBricks = $('.masonry');
 
         containerBricks.imagesLoaded(function () {
@@ -210,7 +210,7 @@
     /* slick slider
      * ------------------------------------------------------ */
     var clSlickSlider = function() {
-        
+
         $('.testimonials__slider').slick({
             arrows: false,
             dots: true,
@@ -235,11 +235,11 @@
    /* Smooth Scrolling
     * ------------------------------------------------------ */
     var clSmoothScroll = function() {
-        
+
         $('.smoothscroll').on('click', function (e) {
             var target = this.hash,
             $target    = $(target);
-            
+
                 e.preventDefault();
                 e.stopPropagation();
 
@@ -262,7 +262,7 @@
    /* Placeholder Plugin Settings
     * ------------------------------------------------------ */
     var clPlaceholder = function() {
-        $('input, textarea, select').placeholder();  
+        $('input, textarea, select').placeholder();
     };
 
 
@@ -272,7 +272,7 @@
 
         $('.alert-box').on('click', '.alert-box__close', function() {
             $(this).parent().fadeOut(500);
-        }); 
+        });
 
     };
 
@@ -280,7 +280,7 @@
    /* Animate On Scroll
     * ------------------------------------------------------ */
     var clAOS = function() {
-        
+
         AOS.init( {
             offset: 200,
             duration: 600,
@@ -295,33 +295,23 @@
 
    /* AjaxChimp
     * ------------------------------------------------------ */
+
     var clAjaxChimp = function() {
-        
+
         $('#mc-form').ajaxChimp({
             language: 'es',
             url: cfg.mailChimpURL
         });
 
-        // Mailchimp translation
-        //
-        //  Defaults:
-        //	 'submit': 'Submitting...',
-        //  0: 'We have sent you a confirmation email',
-        //  1: 'Please enter a value',
-        //  2: 'An email address must contain a single @',
-        //  3: 'The domain portion of the email address is invalid (the portion after the @: )',
-        //  4: 'The username portion of the email address is invalid (the portion before the @: )',
-        //  5: 'This email address looks fake or invalid. Please enter a real email address'
-
         $.ajaxChimp.translations.es = {
-            'submit': 'Submitting...',
-            0: '<i class="fas fa-check"></i> We have sent you a confirmation email',
-            1: '<i class="fas fa-exclamation-circle"></i> You must enter a valid e-mail address.',
-            2: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.',
-            3: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.',
-            4: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.',
-            5: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.'
-        } 
+            'submit': 'Envoi...',
+            0: '<i class="fas fa-check"></i>Merci !',
+            1: '<i class="fas fa-exclamation-circle"></i> Vous devez rentrer une addresse email valide',
+            2: '<i class="fas fa-exclamation-circle"></i> Addresse email non valide.',
+            3: '<i class="fas fa-exclamation-circle"></i> Addresse email non valide.',
+            4: '<i class="fas fa-exclamation-circle"></i> Addresse email non valide.',
+            5: '<i class="fas fa-exclamation-circle"></i> Addresse email non valide.'
+        }
 
     };
 
@@ -329,13 +319,13 @@
    /* Back to Top
     * ------------------------------------------------------ */
     var clBackToTop = function() {
-        
+
         var pxShow  = 500,         // height on which the button will show
         fadeInTime  = 400,         // how slow/fast you want the button to show
         fadeOutTime = 400,         // how slow/fast you want the button to hide
         scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
         goTopButton = $(".cl-go-top")
-        
+
         // Show or hide the sticky footer button
         $(window).on('scroll', function() {
             if ($(window).scrollTop() >= pxShow) {
@@ -350,7 +340,7 @@
    /* Initialize
     * ------------------------------------------------------ */
     (function clInit() {
-        
+
         clPreloader();
         clMenuOnScrolldown();
         clOffCanvas();
@@ -366,5 +356,30 @@
         clBackToTop();
 
     })();
-        
+
 })(jQuery);
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+$(document).ready(function() {
+
+  $("#navbar").css("background-color", "transparent");
+  $("#navbar").css("box-shadow", "0 0 0");
+
+  $(document).scroll(function(){
+    var scrollFirstPage = $(document).scrollTop();
+    //when rich top of boxex than fire
+    if (scrollFirstPage > 750) {
+      $("#navbar").css("background-color", "#ff98a1");
+      $("#navbar").css("box-shadow", "2px 2px 6px #BFBFBF");
+    } else {
+     $("#navbar").css("background-color", "transparent");
+     $("#navbar").css("box-shadow", "0 0 0");
+    }
+    console.log(scrollBottom % $(window).height());
+  })
+
+});
