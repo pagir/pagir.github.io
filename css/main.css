@@ -274,7 +274,7 @@ blockquote cite a:visited {
 }
 
 abbr {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "metropolis-bold", sans-serif;
   font-variant: small-caps;
   text-transform: lowercase;
   letter-spacing: 0.05rem;
@@ -820,6 +820,31 @@ input[type="button"]:focus {
   outline: 0;
 }
 
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ff98a1;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  box-shadow: 2px 2px 6px #BFBFBF;
+  padding-right: 10px;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .home-button {
   position: absolute;
   width: 120px;
@@ -829,11 +854,33 @@ input[type="button"]:focus {
   border-color: #FF7C9E;
   color: white;
 }
+
 .home-button:hover {
   background-color: #F27696;
   border-color: #F27696;
   color: white;
 }
+
+.join-community {
+  position: absolute;
+  width: 420px;
+  font-size: 3.2rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #F27696;
+  border-color: #F27696;
+  color: white;
+  left: 45%;
+  top: 87%;
+  transform: translate(-45%, -87%);
+}
+
+.join-community:hover {
+  background-color: #E06D8B;
+  border-color: #E06D8B;
+  color: white;
+}
+
 .link-button:hover {
   color: white;
 }
@@ -967,7 +1014,7 @@ input::-moz-focus-inner {
   margin: 0;
   padding: 1.5rem 0.6rem 0 0;
   font-size: 8.4rem;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "metropolis-bold", sans-serif;
   font-weight: normal;
   line-height: 6rem;
   text-indent: 0;
@@ -1903,6 +1950,10 @@ input::-moz-focus-inner {
   .home-button-2 {
     right: 326px !important;
   }
+  .join-community {
+    font-size: 2.8rem;
+    width: 420px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .header-logo {
@@ -1942,6 +1993,10 @@ input::-moz-focus-inner {
   .home-button-2 {
     right: 240px !important;
   }
+  .join-community {
+    font-size: 2.7rem;
+    width: 365px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .s-header {
@@ -1967,6 +2022,10 @@ input::-moz-focus-inner {
   .home-button-2 {
     right: 205px !important;
     top: 28px;
+  }
+  .join-community {
+    font-size: 2.3rem;
+    width: 247px;
   }
 }
 
@@ -2304,7 +2363,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1600px) {
   .home-content h1 {
-    font-size: 8.8rem;
+    font-size: 7.4rem;
   }
   .home-content h1 + p {
     font-size: 3.6rem;
@@ -2328,7 +2387,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1500px) {
   .home-content h1 {
-    font-size: 8.6rem;
+    font-size: 7.6rem;
   }
 
   .home-content__main {
@@ -2337,7 +2396,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1400px) {
   .home-content h1 {
-    font-size: 7.8rem;
+    font-size: 7.5rem;
   }
   .home-content h1 + p {
     font-size: 3rem;
@@ -2466,6 +2525,7 @@ html.no-csstransitions .home-content__main {
     bottom: 6rem;
   }
   .home-scroll__icon {
+    display: none;
     height: 4.2rem;
     width: 4.2rem;
   }
@@ -3125,7 +3185,7 @@ html.no-csstransitions .home-content__main {
 
 .testimonials__author {
   margin-top: 0rem;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "metropolis-bold", sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
   color: #000000;
@@ -3383,6 +3443,16 @@ html.no-csstransitions .home-content__main {
   margin: 0;
   padding: 0;
   position: relative;
+  display: flex;
+}
+.mc-form input {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 5.4rem;
+  padding: 1.2rem 150px 1.2rem 20px;
+  margin-bottom: 1.8rem;
+  border: none;
 }
 
 .mc-form {
@@ -3423,7 +3493,7 @@ html.no-csstransitions .home-content__main {
   background: #cc147f;
   border-color: #cc147f;
   padding: 0 15px;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   right: 0;
 }
