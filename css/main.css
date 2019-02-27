@@ -745,7 +745,7 @@ label > input[type="radio"] {
 }
 
 ::-moz-placeholder {
-  color: #626262;
+  color: #FFF;
   /* Firefox 19+ */
 }
 
@@ -3461,7 +3461,7 @@ html.no-csstransitions .home-content__main {
 }
 .mc-form input[type="email"] {
   background-color: rgba(0, 0, 0, 0.2);
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255);
   width: 100%;
   height: 5.4rem;
   padding: 1.2rem 150px 1.2rem 20px;
@@ -3472,26 +3472,26 @@ html.no-csstransitions .home-content__main {
   color: #ffffff;
 }
 .mc-form input[type="email"]::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255);
 }
 .mc-form input[type="email"]:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255);
   /* Firefox 18- */
 }
 .mc-form input[type="email"]::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255);
   /* Firefox 19+ */
 }
 .mc-form input[type="email"]:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255);
 }
 .mc-form input[type="email"].placeholder {
-  color: rgba(255, 255, 255, 0.2) !important;
+  color: rgba(255, 255, 255) !important;
 }
 .mc-form input[type="submit"] {
   color: #ffffff;
-  background: #cc147f;
-  border-color: #cc147f;
+  background: #f27696;
+  border-color: #f27696;
   padding: 0 15px;
   /* position: absolute; */
   top: 0;
