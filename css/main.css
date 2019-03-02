@@ -3455,9 +3455,14 @@ html.no-csstransitions .home-content__main {
   border: none;
 }
 
+.interest-button {
+  width: 50% !important;
+}
+
 .mc-form {
   margin-top: 2.1rem;
   width: 100%;
+  display: flex;
 }
 .mc-form input[type="email"] {
   background-color: rgba(0, 0, 0, 0.2);
@@ -3680,6 +3685,9 @@ html.no-csstransitions .home-content__main {
 
   .contact-address {
     font-size: 2rem;
+  }
+  .mc-form {
+    display: block;
   }
 
   .cl-go-top {
