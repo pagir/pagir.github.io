@@ -2199,7 +2199,6 @@ input::-moz-focus-inner {
   line-height: 4.8rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  color: #ffffff;
   border-bottom: 1px solid transparent;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
