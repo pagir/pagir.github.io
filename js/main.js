@@ -379,7 +379,6 @@ $(document).ready(function() {
      $("#navbar").css("background-color", "transparent");
      $("#navbar").css("box-shadow", "0 0 0");
     }
-    console.log(scrollBottom % $(window).height());
   })
 
 });
